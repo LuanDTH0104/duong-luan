@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Klocker - Product</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Product CSS  -->
+    <link rel="stylesheet" href="/style/header_footer_style.css">
+
+    <link rel="stylesheet" href="/style/style_product.css">
+
+    <!-- GG Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Darker+Grotesque:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Darker+Grotesque:wght@500&family=Playfair+Display:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar container-fluid">
+            <div class="row">
+                <div class="nav-bar-item col-4 nav-select-type">
+                    <a href="#">MEN</a>
+                    <a href="#">WOMEN</a>
+                    <a href="#">BRAND</a>
+                </div>
+                <div class="nav-bar-item col-4 logo">
+                    <img src="/image/Logo.png" alt="">
+                </div>
+                <div class="nav-bar-item col-4 nav-icon">
+                    <a style="position: relative;" class="nav-bar-search">
+                        <form action="">
+                            <input type="text" class="search-input" placeholder="What are you looking for...">
+                        </form>
+                        <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                    </a>
+                    <a>
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </a>
+                    <a id="cart">
+                        <i class="fa fa-shopping-cart cart-icon" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cart-container">
+            <div class="cart-background"></div>
+            <div class="cart">
+
+                <div class="cart-title">
+                    <div>
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <h2 style="display: inline;">Review your card</h2>
+                    </div>
+                    <i class="fa fa-times out-cart-icon" aria-hidden="true"></i>
+                </div>
+                <!-- <div class="cart-empty">
+                    <div class="cart-empty-img">
+                        <img src="image/feedback/feedback_1.jpg" alt="">
+                    </div>
+                    <div class="cart-empty-details">
+                        <h6>Your Cart Is Empty</h6>
+                        <p>GET MOVING ON A NEW ORDER NOW.</p>
+                    </div>
+                    <div class="cart-empty-button">
+                        <a href="">
+                            <button class="btn">Shop Now</button>
+                        </a>
+                    </div>
+                </div> -->
+                <div class="cart-not-empty">
+                    <!-- <div class="notification-cart" style="display: none;">
+                        <p>
+                            Purchase over 10,000,000đ to receive free Shipping
+                        </p>
+                        <p>
+                            Purchase over 10,000,000đ to receive free Shipping
+                        </p>
+                    </div> -->
+                    <div class="cart-title-shipping">
+                        <h6>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            WORLDWIDE SHIPPING + EASY RETURNS
+                        </h6>
+                    </div>
+                    <div class="cart-product">
+                        <div class="cart-item">
+                            <div class="cart-item-img">
+                                <img src="/image/product/product_10.jpg" alt="product">
+                            </div>
+                            <div class="cart-item-detail">
+                                <h3>Legacy slim | 42MM</h3>
+                                <p>Color: Black</p>
+                                <p class="price">4.800.000đ</p>
+                                <p class="remove">Remove</p>
+                            </div>
+                            <div class="cart-number-product">
+                                <ul class="pagination">
+                                    <li class="page-item decrease-product">
+                                        <p class="page-link">-</p>
+                                    </li>
+                                    <li class="page-item number-product">
+                                        <p class="page-link">1</p>
+                                    </li>
+                                    <li class="page-item increase-product">
+                                        <p class="page-link">+</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-checkout">
+                        <div class="promo-code">
+                            <h6>ENTER PROMO CODE:</h6>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Enter Promo Code"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">APPLY</button>
+                                </div>
+                            </div>
+                            <h6 id="discount" style="color: rgba(66, 32, 92, 1);">10</h6>
+                        </div>
+                        <div class="check-out">
+                            <div class="total">
+                                <h6>SUBTOTAL: </h6>
+                                <h6 id="total-price">0.000.800</h6>
+                            </div>
+                            <button>CHECK OUT NOW</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="item-details-container">
+            <div class="item-detail-background">
+
+            </div>
+            <div class="card-item-details container-fluid">
+                <div class="row item-detail">
+                    <div class="col-5">
+                        <div class="item-detail-img" id="item-detail-img">
+
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="item-detail-title cart-title">
+                            <i class="fa fa-times out-cart-icon out-item-detail-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="item-detail-content">
+                            <h3 id="item-detail-name">Cali Diver</h3>
+                            <p id="item-detail-size"><b>Size</b>: 40MM</p>
+                            <p id="item-detail-color">Color: Orange</p>
+                            <p id="item-detail-price">Price: 14.000.000đ</p>
+                            <p id="item-detail-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Aspernatur
+                                quibusdam iusto nostrum sapiente hic</p>
+                            <button type="button" class="btn btn-dark add-product">
+                                ADD TO CARD
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row another-products">
+                    <div class="col-3">
+                        <img src="/image/product/product_2.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="/image/product/product_3.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="/image/product/product_4.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="/image/product/product_5.jpg" class="w-100" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="select-item-type-containner">
+            <div class="select-item-type">
+                <div class="cart-title select-item-header">
+                    <div>
+                        <i class="fa fa-sliders" aria-hidden="true"></i>
+                        <h2 class="d-inline">Customize</h2>
+                    </div>
+                    <i class="fa fa-times out-customize-icon" aria-hidden="true"></i>
+                </div>
+                <div class="linear"></div>
+                <div class="select-item-type-item">
+                    <div class="dropdown select-category">
+                        <div class="dropdown-title">
+                            <p class="button-select" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Categories
+                            </p>
+                            <i class="fa fa-chevron-down show-dropdown-menu" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-down hide-dropdown-menu" aria-hidden="true"></i>
+                        </div>
+                        <div class="dropdown-menu-custom-container">
+                            <div class="dropdown-menu-custom" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-items-custom">
+                                    <div class="dropdown-item-custom">
+                                        <p><i class="fa fa-circle" aria-hidden="true"></i>Watches</p>
+                                        <div class="checkbox-wrapper-8">
+                                            <input class="tgl tgl-skewed" id="watches" type="checkbox" />
+                                            <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON"
+                                                for="watches"></label>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-item-custom">
+                                        <p><i class="fa fa-circle" aria-hidden="true"></i>Sunglasses</p>
+                                        <div class="checkbox-wrapper-8">
+                                            <input class="tgl tgl-skewed" id="sunglasses" type="checkbox" />
+                                            <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON"
+                                                for="sunglasses"></label>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-item-custom">
+                                        <p><i class="fa fa-circle" aria-hidden="true"></i>Necklaces</p>
+                                        <div class="checkbox-wrapper-8">
+                                            <input class="tgl tgl-skewed" id="necklaces" type="checkbox" />
+                                            <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON"
+                                                for="necklaces"></label>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-item-custom">
+                                        <p><i class="fa fa-circle" aria-hidden="true"></i>Bracelets</p>
+                                        <div class="checkbox-wrapper-8">
+                                            <input class="tgl tgl-skewed" id="bracelets" type="checkbox" />
+                                            <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON"
+                                                for="bracelets"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown select-watch-size">
+                        <div class="dropdown-title">
+                            <p class="button-select" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Watches Size
+                            </p>
+                            <i class="fa fa-chevron-down show-dropdown-menu" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-down hide-dropdown-menu" aria-hidden="true"></i>
+                        </div>
+                        <div class="dropdown-menu-custom-container">
+                            <div class="dropdown-menu-custom" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-items-custom">
+                                    <div class="dropdown-item-custom">
+                                        <div class="checkbox-wrapper-10">
+                                            <input class="tgl tgl-flip" id="size-36" type="checkbox" />
+                                            <label class="tgl-btn" data-tg-off="36" data-tg-on="36"
+                                                for="size-36"></label>
+                                        </div>
+                                        <div class="checkbox-wrapper-10">
+                                            <input class="tgl tgl-flip" id="size-38" type="checkbox" />
+                                            <label class="tgl-btn" data-tg-off="38" data-tg-on="38"
+                                                for="size-38"></label>
+                                        </div>
+                                        <div class="checkbox-wrapper-10">
+                                            <input class="tgl tgl-flip" id="size-40" type="checkbox" />
+                                            <label class="tgl-btn" data-tg-off="40" data-tg-on="40"
+                                                for="size-40"></label>
+                                        </div>
+                                        <div class="checkbox-wrapper-10">
+                                            <input class="tgl tgl-flip" id="size-42" type="checkbox" />
+                                            <label class="tgl-btn" data-tg-off="42" data-tg-on="42"
+                                                for="size-42"></label>
+                                        </div>
+                                        <div class="checkbox-wrapper-10">
+                                            <input class="tgl tgl-flip" id="size-44" type="checkbox" />
+                                            <label class="tgl-btn" data-tg-off="44" data-tg-on="44"
+                                                for="size-44"></label>
+                                        </div>
+                                        <div class="checkbox-wrapper-10">
+                                            <input class="tgl tgl-flip" id="size-46" type="checkbox" />
+                                            <label class="tgl-btn" data-tg-off="46" data-tg-on="46"
+                                                for="size-46"></label>
+                                        </div>
+                                        <div class="checkbox-wrapper-10">
+                                            <input class="tgl tgl-flip" id="size-48" type="checkbox" />
+                                            <label class="tgl-btn" data-tg-off="48" data-tg-on="48"
+                                                for="size-48"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown select-sunglasses-type">
+                        <div class="dropdown-title">
+                            <p class="button-select" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Sunglasses Type
+                            </p>
+                            <i class="fa fa-chevron-down show-dropdown-menu" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-down hide-dropdown-menu" aria-hidden="true"></i>
+                        </div>
+                        <div class="dropdown-menu-custom-container">
+                            <div class="dropdown-menu-custom" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-items-custom">
+                                    <div class="dropdown-item-custom">
+                                        <div class="checkbox-wrapper-16">
+                                            <label class="checkbox-wrapper">
+                                                <input type="checkbox" class="checkbox-input" id="Aviator" />
+                                                <span class="checkbox-tile">
+                                                    <span class="checkbox-icon">
+                                                        <img src="/image/sunglasses_type/filter_shape_aviator.png"
+                                                            alt="">
+                                                    </span>
+                                                    <span class="checkbox-label">Aviator</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-wrapper-16">
+                                            <label class="checkbox-wrapper">
+                                                <input type="checkbox" class="checkbox-input" />
+                                                <span class="checkbox-tile">
+                                                    <span class="checkbox-icon">
+                                                        <img src="/image/sunglasses_type/filter_shape_geometric.png"
+                                                            alt="">
+                                                    </span>
+                                                    <span class="checkbox-label">Geometric</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-wrapper-16">
+                                            <label class="checkbox-wrapper">
+                                                <input type="checkbox" class="checkbox-input" />
+                                                <span class="checkbox-tile">
+                                                    <span class="checkbox-icon">
+                                                        <img src="/image/sunglasses_type/filter_shape_oval.png" alt="">
+                                                    </span>
+                                                    <span class="checkbox-label">Oval</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-wrapper-16">
+                                            <label class="checkbox-wrapper">
+                                                <input type="checkbox" class="checkbox-input" />
+                                                <span class="checkbox-tile">
+                                                    <span class="checkbox-icon">
+                                                        <img src="/image/sunglasses_type/filter_shape_rectangle.png"
+                                                            alt="">
+                                                    </span>
+                                                    <span class="checkbox-label">Rectangle</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-wrapper-16">
+                                            <label class="checkbox-wrapper">
+                                                <input type="checkbox" class="checkbox-input" />
+                                                <span class="checkbox-tile">
+                                                    <span class="checkbox-icon">
+                                                        <img src="/image/sunglasses_type/filter_shape_round.png" alt="">
+                                                    </span>
+                                                    <span class="checkbox-label">Round</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-wrapper-16">
+                                            <label class="checkbox-wrapper">
+                                                <input type="checkbox" class="checkbox-input" />
+                                                <span class="checkbox-tile">
+                                                    <span class="checkbox-icon">
+                                                        <img src="/image/sunglasses_type/filter_shape_square.png" alt="">
+                                                    </span>
+                                                    <span class="checkbox-label">Square</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown select-material">
+                        <div class="dropdown-title">
+                            <p class="button-select" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Material
+                            </p>
+                            <i class="fa fa-chevron-down show-dropdown-menu" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-down hide-dropdown-menu" aria-hidden="true"></i>
+                        </div>
+                        <div class="dropdown-menu-custom-container">
+                            <div class="dropdown-menu-custom" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-items-custom">
+                                    <div class="dropdown-item-custom">
+                                        <div class="checkbox-wrapper-37">
+                                            <input type="checkbox" name="checkbox" id="titan" />
+                                            <label for="titan" class="terms-label">
+                                                <svg class="checkbox-svg" viewBox="0 0 200 200" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <mask id="path-1-inside-1_476_5-37" fill="white">
+                                                        <rect width="200" height="200" />
+                                                    </mask>
+                                                    <rect width="200" height="200" class="checkbox-box"
+                                                        stroke-width="40" mask="url(#path-1-inside-1_476_5-37)" />
+                                                    <path class="checkbox-tick" d="M52 111.018L76.9867 136L149 64"
+                                                        stroke-width="15" />
+                                                </svg>
+                                                <span class="label-text">Titan</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-wrapper-37">
+                                            <input type="checkbox" name="checkbox" id="gold" />
+                                            <label for="gold" class="terms-label">
+                                                <svg class="checkbox-svg" viewBox="0 0 200 200" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <mask id="path-1-inside-1_476_5-37" fill="white">
+                                                        <rect width="200" height="200" />
+                                                    </mask>
+                                                    <rect width="200" height="200" class="checkbox-box"
+                                                        stroke-width="40" mask="url(#path-1-inside-1_476_5-37)" />
+                                                    <path class="checkbox-tick" d="M52 111.018L76.9867 136L149 64"
+                                                        stroke-width="15" />
+                                                </svg>
+                                                <span class="label-text">Gold</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-wrapper-37">
+                                            <input type="checkbox" name="checkbox" id="silver" />
+                                            <label for="silver" class="terms-label">
+                                                <svg class="checkbox-svg" viewBox="0 0 200 200" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <mask id="path-1-inside-1_476_5-37" fill="white">
+                                                        <rect width="200" height="200" />
+                                                    </mask>
+                                                    <rect width="200" height="200" class="checkbox-box"
+                                                        stroke-width="40" mask="url(#path-1-inside-1_476_5-37)" />
+                                                    <path class="checkbox-tick" d="M52 111.018L76.9867 136L149 64"
+                                                        stroke-width="15" />
+                                                </svg>
+                                                <span class="label-text">Silver</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-wrapper-37">
+                                            <input type="checkbox" name="checkbox" id="leather" />
+                                            <label for="leather" class="terms-label">
+                                                <svg class="checkbox-svg" viewBox="0 0 200 200" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <mask id="path-1-inside-1_476_5-37" fill="white">
+                                                        <rect width="200" height="200" />
+                                                    </mask>
+                                                    <rect width="200" height="200" class="checkbox-box"
+                                                        stroke-width="40" mask="url(#path-1-inside-1_476_5-37)" />
+                                                    <path class="checkbox-tick" d="M52 111.018L76.9867 136L149 64"
+                                                        stroke-width="15" />
+                                                </svg>
+                                                <span class="label-text">Leather</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-wrapper-37">
+                                            <input type="checkbox" name="checkbox" id="iron" />
+                                            <label for="iron" class="terms-label">
+                                                <svg class="checkbox-svg" viewBox="0 0 200 200" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <mask id="path-1-inside-1_476_5-37" fill="white">
+                                                        <rect width="200" height="200" />
+                                                    </mask>
+                                                    <rect width="200" height="200" class="checkbox-box"
+                                                        stroke-width="40" mask="url(#path-1-inside-1_476_5-37)" />
+                                                    <path class="checkbox-tick" d="M52 111.018L76.9867 136L149 64"
+                                                        stroke-width="15" />
+                                                </svg>
+                                                <span class="label-text">Iron</span>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-wrapper-37">
+                                            <input type="checkbox" name="checkbox" id="plastic" />
+                                            <label for="plastic" class="terms-label">
+                                                <svg class="checkbox-svg" viewBox="0 0 200 200" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <mask id="path-1-inside-1_476_5-37" fill="white">
+                                                        <rect width="200" height="200" />
+                                                    </mask>
+                                                    <rect width="200" height="200" class="checkbox-box"
+                                                        stroke-width="40" mask="url(#path-1-inside-1_476_5-37)" />
+                                                    <path class="checkbox-tick" d="M52 111.018L76.9867 136L149 64"
+                                                        stroke-width="15" />
+                                                </svg>
+                                                <span class="label-text">Plastic</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown select-color">
+                        <div class="dropdown-title">
+                            <p class="button-select" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Colors
+                            </p>
+                            <i class="fa fa-chevron-down show-dropdown-menu" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-down hide-dropdown-menu" aria-hidden="true"></i>
+                        </div>
+                        <div class="dropdown-menu-custom-container">
+                            <div class="dropdown-menu-custom" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-items-custom">
+                                    <div class="checkbox-wrapper-31">
+                                        <input type="checkbox" />
+                                        <svg viewBox="0 0 35.6 35.6">
+                                            <circle class="background" style="--color:#BF0413" cx="17.8" cy="17.8"
+                                                r="17.8">
+                                            </circle>
+                                            <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                                            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                            </polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="checkbox-wrapper-31">
+                                        <input type="checkbox" />
+                                        <svg viewBox="0 0 35.6 35.6">
+                                            <circle class="background" style="--color:#FFC100" cx="17.8" cy="17.8"
+                                                r="17.8">
+                                            </circle>
+                                            <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                                            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                            </polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="checkbox-wrapper-31">
+                                        <input type="checkbox" />
+                                        <svg viewBox="0 0 35.6 35.6">
+                                            <circle class="background" style="--color:#0D448C" cx="17.8" cy="17.8"
+                                                r="17.8">
+                                            </circle>
+                                            <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                                            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                            </polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="checkbox-wrapper-31">
+                                        <input type="checkbox" />
+                                        <svg viewBox="0 0 35.6 35.6">
+                                            <circle class="background" style="--color:#6cbe45" cx="17.8" cy="17.8"
+                                                r="17.8">
+                                            </circle>
+                                            <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                                            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                            </polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="checkbox-wrapper-31">
+                                        <input type="checkbox" />
+                                        <svg viewBox="0 0 35.6 35.6">
+                                            <circle class="background" style="--color:#252526" cx="17.8" cy="17.8"
+                                                r="17.8">
+                                            </circle>
+                                            <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                                            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                            </polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="checkbox-wrapper-31">
+                                        <input type="checkbox" />
+                                        <svg viewBox="0 0 35.6 35.6">
+                                            <circle class="background" style="--color:#737373" cx="17.8" cy="17.8"
+                                                r="17.8">
+                                            </circle>
+                                            <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                                            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                            </polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="checkbox-wrapper-31">
+                                        <input type="checkbox" />
+                                        <svg viewBox="0 0 35.6 35.6">
+                                            <circle class="background" style="--color:#73168C" cx="17.8" cy="17.8"
+                                                r="17.8">
+                                            </circle>
+                                            <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                                            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                            </polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-item-submit check-out">
+                        <button style="margin-bottom: 100px;">APPLY</button>
+                    </div>
+                </div>
+            </div>
+            <div class="select-item-type-background"></div>
+        </div>
+
+        <div class="container-fluid body-content">
+            <div class="row main-title">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="/image/productPage/watches.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>ALL WATCHES</h1>
+                                <p>Classic style meets modern design.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/image/productPage/sunglasses.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>SUNGLASSES </h1>
+                                <p>From retro to modern, find the perfect shades to match your spirit of adventure.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/image/productPage/necklaces.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>NECKLACES</h1>
+                                <p>Our necklaces celebrate design stripped down to its essential elements with strong
+                                    lines, simple geometry and modern materials.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/image/productPage/bracelets.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>BRACELETS</h1>
+                                <p>Our mens bracelets celebrate design stripped down to its essential elements with
+                                    strong lines, simple geometry and modern materials.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="products-container">
+                <div class="row">
+                    <div class="custom-product">
+                        <button type="button" class="btn btn-customize">
+                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                            Customize
+                        </button>
+                    </div>
+                </div>
+                <div class="products items row">
+                    <div class="col-6 col-lg-4 col-xl-2 product-item">
+                        <div class="card ">
+                            <a>
+                                <img src="/image/product/product_1.jpg" class="card-img-top" alt="Product">
+                            </a>
+                            <div class="card-body">
+                                <div>
+                                    <h5 class="card-title">CALI DIVER | 40MMhaha</h5>
+                                    <p class="card-text">Horizon Orange</p>
+                                    <h6 class="card-title">₫14,900,000.00</h6>
+                                </div>
+                                <a href="#">
+                                    <a href="#" type="button" class="btn btn-dark add-product">
+
+                                        ADD TO CARD
+
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="paging">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-5 col-6 footer-connect">
+                    <h3>Let's Connect</h3>
+                    <p>Get 10% off your first purchase and keep up with our lastest drops, special editions and
+                        member-only sales.</p>
+                    <a href="#" class="btn btn-lg footer-button" role="button" aria-pressed="true">Sign in</a>
+                </div>
+                <div class="col-xl col-6 footer-nav">
+                    <h3>Shop Klocker</h3>
+                    <nav>
+                        <a href="#">Shop Watches</a>
+                        <a href="#">Shop Eyewear</a>
+                        <a href="#">Shop Jewelry</a>
+                        <a href="#">Shop Watches</a>
+                    </nav>
+                </div>
+                <div class="col-xl col-6 footer-nav">
+                    <h3>Customer Service</h3>
+                    <nav>
+                        <a href="#">My Account</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Shipping & Returns</a>
+                    </nav>
+                </div>
+                <div class="col-xl col-6 footer-nav">
+                    <h3>#JointheKlocker</h3>
+                    <nav>
+                        <a href="#">Our Story</a>
+                        <a href="#">Our Blog</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class=" footer-privacy">
+            <div>
+                <p>© 2023 KLOCKER</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="/js/headerJS.js"></script>
+    <script src="/js/product.js"></script>
+
+    <!-- Zoom Product IMG   -->
+    <script>
+        var addZoom = target => {
+            // (A) GET CONTAINER + IMAGE SOURCE
+            let container = document.getElementById(target),
+                imgsrc = container.currentStyle || window.getComputedStyle(container, false);
+            imgsrc = imgsrc.backgroundImage.slice(4, -1).replace(/"/g, "");
+
+            // (B) LOAD IMAGE + ATTACH ZOOM
+            let img = new Image();
+            img.src = imgsrc;
+            img.onload = () => {
+                // (B1) CALCULATE ZOOM RATIO
+                let ratio = img.naturalHeight / img.naturalWidth,
+                    percentage = ratio * 100 + "%";
+
+                // (B2) ATTACH ZOOM ON MOUSE MOVE
+                container.onmousemove = e => {
+                    let rect = e.target.getBoundingClientRect(),
+                        xPos = e.clientX - rect.left,
+                        yPos = e.clientY - rect.top,
+                        xPercent = xPos / (container.clientWidth / 100) + "%",
+                        yPercent = yPos / ((container.clientWidth * ratio) / 100) + "%";
+
+                    Object.assign(container.style, {
+                        backgroundPosition: xPercent + " " + yPercent,
+                        backgroundSize: img.naturalWidth + "px"
+                    });
+                };
+
+                // (B3) RESET ZOOM ON MOUSE LEAVE
+                container.onmouseleave = e => {
+                    Object.assign(container.style, {
+                        backgroundPosition: "center",
+                        backgroundSize: "cover"
+                    });
+                };
+            }
+        };
+
+        // (C) ATTACH FOLLOW ZOOM
+        window.onload = () => addZoom("item-detail-img");
+    </script>
+
+    <!-- Load data -->
+    <script>
+
+        fetch('/api/product/')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                data.map(item => {
+                    Product(item);
+                });
+                document.getElementsByClassName("product-item")[0].classList.add("d-none");
+            })
+
+        function Product (product){
+            let productSample = document.getElementsByClassName("product-item")[0].cloneNode(true);
+
+            productSample.querySelector(".card-img-top").src = product.productImgUrl;
+            productSample.querySelector(".card-title").textContent = product.productName;
+            productSample.querySelector(".card-text").textContent = product.description;
+            productSample.querySelector(".card-title:last-child").textContent = product.price.toLocaleString('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+            });
+
+            productSample.querySelector(".add-product").setAttribute("data-product-id", product.productId);
+            productSample.querySelector(".add-product").setAttribute("href", "/cart/add-to-card/" + product.productId +"/1");
+            document.querySelector(".items").append(productSample);
+        }
+
+    </script>
+</body>
+
+</html>

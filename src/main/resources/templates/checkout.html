@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Klocker</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--Index CSS  -->
+    <link rel="stylesheet" href="/style/style_index.css">
+    <link rel="stylesheet" href="/style/header_footer_style.css">
+    <!-- SweetAlert   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.3/dist/sweetalert2.min.css">
+    <!-- GG Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Darker+Grotesque:wght@500&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Darker+Grotesque:wght@500&family=Playfair+Display:wght@500&display=swap"
+          rel="stylesheet">
+    <style>
+        p,
+        strong {
+            font-size: 19px;
+        }
+
+        p strong {
+            font-size: 24px;
+        }
+
+        input {
+            height: 50px !important;
+            border-radius: 5px !important;
+        }
+
+        .cart-product {
+            overflow-y: auto;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="nav-bar container-fluid">
+        <div class="row">
+            <div class="nav-bar-item col-4 nav-select-type">
+                <a href="home">HOME</a>
+                <a href="product">PRODUCT</a>
+            </div>
+            <div class="nav-bar-item col-4 logo">
+                <img src="/image/Logo.png" alt="">
+            </div>
+            <div class="nav-bar-item col-4 nav-icon">
+                <a id="login" href="login" class="tooltip-wrapper">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <span class="tooltip-text">Login</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="cart-container">
+        <div class="cart-background"></div>
+
+    </div>
+
+</header>
+<main style="margin-top: 150px;margin-bottom: 150px;">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="bg-white p-3 rounded mb-4">
+
+                    <p><strong style="font-weight: 500;font-size: 30px;">EXPRESS Delivery</strong></p>
+                    <p>Delivered on or before 10, Nov</p>
+
+                    <h6 class="border-bottom pb-2 mt-4">Delivery Address</h6>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" id="firstName" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" id="lastName" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="address" class="form-control" placeholder="Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phoneNumber" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="container-fluid mb-2">
+                            <div class="row">
+                                <h6 class="border-top pt-3 pb-2 mt-4 col-12">Payment Method:</h6>
+                            </div>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn-dark col-5 ml-2 mr-2 cash">CASH</button>
+                                <button type="button" class="btn btn-secondary col-5 ml-2 mr-2 banking">BANKING</button>
+                            </div>
+                            <div class="qrCode d-none">
+                                <div class="row justify-content-center mt-4">
+                                    <img src="/image/QR_Code.jpg" class="w-50" alt="">
+                                </div>
+                                <div class="row justify-content-center mt-4">
+                                    <p><strong style="font-size: 20px;">NOTE:</strong> Please write the content of your
+                                        transfer as your
+                                        email</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>Please note, by continuing with Checkout KLOCKER will process your personal data in
+                            accordance
+                            with
+                            its Data Policy Statement.</small>
+                        </p>
+                        <button type="button" id="get-payment" style="border-radius: 7px;height:60px"
+                                class="btn btn-dark btn-block">
+                            CONTINUE
+                            TO
+                            PAYMENT
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white p-3 rounded" style="width: 430px;">
+                    <a href="product" style="text-decoration: none">
+                        <button class="btn btn-light btn-block mb-3">CONTINUE SHOPPING</button>
+                    </a>
+                    <div class="cart-product">
+                        <div class="cart-item border-bottom">
+                            <div class="cart-item-img">
+                                <img src="image/product/product_10.jpg" alt="product">
+                            </div>
+                            <div class="cart-item-detail">
+                                <h3>Legacy slim | 42MM</h3>
+                                <p>Color: Black</p>
+                                <p class="price">4.800.000đ</p>
+                                <p class="remove">Remove</p>
+                            </div>
+                            <div class="cart-number-product">
+                                <ul class="pagination">
+                                    <li class="page-item decrease-product">
+                                        <p class="page-link">-</p>
+                                    </li>
+                                    <li class="page-item number-product">
+                                        <p class="page-link">1</p>
+                                    </li>
+                                    <li class="page-item increase-product">
+                                        <p class="page-link">+</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo-code" style="box-shadow: none">
+                        <h6>ENTER PROMO CODE:</h6>
+                        <div class="input-group mb-3">
+                            <input style="border-radius: 5px 0 0 5px!important;" type="text" class="form-control"
+                                   placeholder="Enter Promo Code"
+                                   aria-label="Recipient's username" id="promoCode" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary " id="getPromo" type="button">APPLY</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3" style="padding: 0 15px;">
+                        <p>Items Price:</p>
+                        <p id="total-product">3,000,000 ₫</p>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding: 0 15px;">
+                        <p>Delivery:</p>
+                        <p>FREE</p>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding: 0 15px;">
+                        <p>Discount:</p>
+                        <p id="discount">0</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-top pt-2" style="padding: 0 15px;">
+                        <strong>TOTAL:</strong>
+                        <strong id="total-price">3,000,000 ₫</strong>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-5 col-6 footer-connect">
+                <h3>Let's Connect</h3>
+                <p>Get 10% off your first purchase and keep up with our lastest drops, special editions and
+                    member-only sales.</p>
+                <a href="#" class="btn btn-lg footer-button" role="button" aria-pressed="true">Sign in</a>
+            </div>
+            <div class="col-xl col-6 footer-nav">
+                <h3>Shop Klocker</h3>
+                <nav>
+                    <a href="#">Shop Watches</a>
+                    <a href="#">Shop Eyewear</a>
+                    <a href="#">Shop Jewelry</a>
+                    <a href="#">Shop Watches</a>
+                </nav>
+            </div>
+            <div class="col-xl col-6 footer-nav">
+                <h3>Customer Service</h3>
+                <nav>
+                    <a href="#">My Account</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Shipping & Returns</a>
+                </nav>
+            </div>
+            <div class="col-xl col-6 footer-nav">
+                <h3>#JointheKlocker</h3>
+                <nav>
+                    <a href="#">Our Story</a>
+                    <a href="#">Our Blog</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class=" footer-privacy">
+        <div>
+            <p>© 2023 KLOCKER</p>
+        </div>
+    </div>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.3/dist/sweetalert2.all.min.js"></script>
+<script src="/js/headerJS.js"></script>
+<script>
+    fetch('/api/card/')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            data.map(item => {
+                Product(item);
+            });
+            document.getElementsByClassName("cart-item")[0].classList.add("d-none");
+        })
+
+    function Product(product) {
+        let productSample = document.getElementsByClassName("cart-item")[0].cloneNode(true);
+
+        productSample.querySelector(".cart-item-img img").src = product.productImgUrl;
+        productSample.querySelector(".cart-item-detail h3").textContent = product.productName;
+        productSample.querySelector(".price").textContent = product.price.toLocaleString('vi-VN', {
+            style: 'currency',
+            currency: 'VND'
+        });
+      productSample.querySelector(".cart-number-product .number-product p").textContent = product.quantity;
+        //
+        // productSample.querySelector(".add-product").setAttribute("data-product-id", product.productId);
+        // productSample.querySelector(".add-product").setAttribute("href", "/cart/add-to-card/" + product.productId + "/1");
+        document.querySelector(".cart-product").append(productSample);
+    }
+</script>
+</body>
+
+</html>
